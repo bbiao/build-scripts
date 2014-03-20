@@ -1,1 +1,5 @@
-./configure --enable-shared --prefix=/usr/local
+#!/bin/sh
+
+./configure \
+    --prefix=/usr/local \
+    --enable-shared

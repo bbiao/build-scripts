@@ -1,4 +1,26 @@
-./configure --prefix=/usr/local/gcc4 --with-mpfr=/usr/local/mpfr --with-gmp=/usr/local/gmp --with-mpc=/usr/local/mpc --enable-checking=release --disable-multilib --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-languages=c,c++,objc,obj-c++ --with-ppl --with-cloog --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux #--enable-gnu-unique-object 
+#!/bin/sh
+
+./configure \
+    --prefix=/usr/local/gcc4 \
+    --with-mpfr=/usr/local/mpfr \
+    --with-gmp=/usr/local/gmp \
+    --with-mpc=/usr/local/mpc \
+    --enable-checking=release \
+    --disable-multilib \
+    --enable-bootstrap \
+    --enable-shared \
+    --enable-threads=posix \
+    --enable-checking=release \
+    --with-system-zlib \
+    --enable-__cxa_atexit \
+    --disable-libunwind-exceptions \
+    --enable-languages=c,c++,objc,obj-c++ \
+    --with-ppl \
+    --with-cloog \
+    --with-tune=generic \
+    --with-arch_32=i686 \
+    --build=x86_64-redhat-linux \
+    #--enable-gnu-unique-object 
 
 #Libraries have been installed in:
 #   /usr/local/gcc4/lib/../lib64
